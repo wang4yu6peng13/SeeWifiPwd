@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name" />
+
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+
+        android:id="@+id/update"
+        style="@style/LLMenu">
+
+        <TextView
+            style="@style/MenuItem"
+
+            android:text="@string/update" />
+
+        <TextView
+            style="@style/MenuItemSmall"
+
+            android:text="@string/this_version" />
+    </LinearLayout>
+
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+
+        android:id="@+id/app_explain"
+        style="@style/LLMenu">
+
+        <TextView
+            style="@style/MenuItem"
+            android:layout_marginBottom="@dimen/listmargin"
+
+            android:text="@string/app_explain" />
+    </LinearLayout>
+
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+
+        android:id="@+id/open_source"
+        style="@style/LLMenu">
+
+        <TextView
+            style="@style/MenuItem"
+            android:layout_marginBottom="@dimen/listmargin"
+
+            android:text="@string/open_source" />
+    </LinearLayout>
+
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+
+        android:id="@+id/contribute"
+        style="@style/LLMenu">
+    <TextView
+        android:layout_marginBottom="@dimen/listmargin"
+
+        style="@style/MenuItem"
+        android:text="@string/contribute" />
+    </LinearLayout>
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+        android:id="@+id/evaluate"
+        style="@style/LLMenu">
+
+        <TextView
+            style="@style/MenuItem"
+
+            android:text="@string/evaluate" />
+
+        <TextView
+            style="@style/MenuItemSmall"
+
+            android:text="@string/evaluate_app" />
+    </LinearLayout>
+
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+        android:id="@+id/share_app"
+        style="@style/LLMenu">
+
+        <TextView
+            style="@style/MenuItem"
+
+            android:text="@string/share" />
+
+        <TextView
+            style="@style/MenuItemSmall"
+
+            android:text="@string/share_app" />
+    </LinearLayout>
+
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+        android:id="@+id/weibo"
+        style="@style/LLMenu">
+
+        <TextView
+            style="@style/MenuItem"
+
+            android:text="@string/weibo" />
+
+        <TextView
+            style="@style/MenuItemSmall"
+
+            android:text="@string/weibo_site" />
+    </LinearLayout>
+
+    <View style="@style/MenuLine" />
+
+    <LinearLayout
+        android:id="@+id/email"
+        style="@style/LLMenu">
+
+        <TextView
+            style="@style/MenuItem"
+
+            android:text="@string/send_email" />
+
+        <TextView
+            style="@style/MenuItemSmall"
+
+            android:text="@string/send_email_site" />
+    </LinearLayout>
+            <View style="@style/MenuLine" />
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

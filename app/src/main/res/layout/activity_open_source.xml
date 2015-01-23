@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:id="@+id/seepwd"
+                style="@style/LLMenu">
+
+                <TextView
+                    style="@style/MenuItem"
+
+                    android:text="seepwd" />
+
+                <TextView
+                    style="@style/MenuItemSmall"
+
+                    android:text="@string/seepwd_site" />
+            </LinearLayout>
+
+            <View style="@style/MenuLine" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/aos"
+                style="@style/LLMenu">
+
+                <TextView
+                    style="@style/MenuItem"
+
+                    android:text="Android-ObservableScrollView" />
+
+                <TextView
+                    style="@style/MenuItemSmall"
+
+                    android:text="@string/aos_site" />
+            </LinearLayout>
+
+            <View style="@style/MenuLine" />
+
+            <LinearLayout
+                android:id="@+id/fab"
+                style="@style/LLMenu">
+
+                <TextView
+                    style="@style/MenuItem"
+               
+                    android:text="FloatingActionButton" />
+
+                <TextView
+                    style="@style/MenuItemSmall"
+                  
+                    android:text="@string/fab_site" />
+            </LinearLayout>
+
+            <View style="@style/MenuLine" />
+
+            <LinearLayout
+                android:id="@+id/sbt"
+                style="@style/LLMenu">
+
+                <TextView
+                    style="@style/MenuItem"
+                  
+                    android:text="SystemBarTint" />
+
+                <TextView
+                    style="@style/MenuItemSmall"
+               
+                    android:text="@string/sbt_site" />
+            </LinearLayout>
+
+            <View style="@style/MenuLine" />
+
+            <LinearLayout
+                android:id="@+id/md"
+                style="@style/LLMenu">
+
+                <TextView
+                    style="@style/MenuItem"
+                    android:text="MaterialDialog" />
+
+                <TextView
+                    style="@style/MenuItemSmall"
+                    
+                    android:text="@string/md_site" />
+            </LinearLayout>
+            <View style="@style/MenuLine" />
+
+            <LinearLayout
+                android:id="@+id/thisapp"
+                style="@style/LLMenu">
+
+                <TextView
+                    style="@style/MenuItem"
+              
+                    android:text="@string/app_name" />
+
+                <TextView
+                    style="@style/MenuItemSmall"
+                   
+                    android:text="@string/thisapp_site" />
+            </LinearLayout>
+            <View style="@style/MenuLine" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

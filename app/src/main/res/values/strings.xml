@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SeeWifiPwd</string>
+    <string name="noroot">您的设备没有root，无法查看密码</string>
+    <string name="mustroot">设备必须root才能查看密码</string>
+    <string name="mustauth">请允许root授权</string>
+    <string name="nopwd">无密码</string>
+    <string name="title_activity_about">关于</string>
+    <string name="update">更新</string>
+    <string name="this_version">当前版本</string>
+    <string name="app_explain">软件原理</string>
+    <string name="open_source">开源项目</string>
+    <string name="contribute">捐赠开发者</string>
+    <string name="contribute_text">本软件完全免费，为了鼓励开发者，您可以通过支付宝进行捐赠。\n帐号wang4yu6peng13@qq.com已经复制，感谢您的支持。</string>
+    <string name="cancel">取消</string>
+    <string name="open_alipay">打开支付宝</string>
+    <string name="weibo">微博 @鹏总V5</string>
+    <string name="weibo_site">http://weibo.com/u/3384981692</string>
+    <string name="share">分享给好友</string>
+    <string name="share_app">向您的好友推荐本应用</string>
+    <string name="evaluate">给应用评价</string>
+    <string name="evaluate_app">支持本应用，给应用打分</string>
+    <string name="send_email">邮件反馈</string>
+    <string name="send_email_site">wang4yu6peng13@qq.com</string>
+    <string name="download_site">http://pan.baidu.com/s/1hqxOdl6</string>
+    <string name="app_explain_text">在Android平台连接过的wifi，其密码保存在系统目录----下，
+读取该文件必须获取root权限，因此您要使用这类应用，几乎都要root权限。\n本应用除了获取root权限外，
+        没有其他任何权限，不会上传您的数据，没有广告。本应用参照了～～的开源项目，并使用了～～～开源项目，
+        同时本应用也完全开源，以上地址在关于菜单里可以找到。若您仍然不放心该应用的安全性，建议您卸载。\n
+Tips：手动删除的wifi无法获取。长按列表里的wifi名称和密码可以复制。有密码的排在前。\n
+首页的照片是我的家乡名胜古迹——佛宫寺释迦塔（中国山西应县），以此纪念。\n
+雨棚\n
+2015.1.21</string>
+    <string name="seepwd_site">https://github.com/cfm1120/seepwd</string>
+    <string name="aos_site">https://github.com/ksoichiro/Android-ObservableScrollView</string>
+    <string name="fab_site">https://github.com/makovkastar/FloatingActionButton</string>
+    <string name="sbt_site">https://github.com/jgilfelt/SystemBarTint</string>
+    <string name="md_site">https://github.com/drakeet/MaterialDialog</string>
+    <string name="thisapp_site">https://github.com/</string>
+</resources>
