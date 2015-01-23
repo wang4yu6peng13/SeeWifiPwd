@@ -15,12 +15,14 @@
 
             android:orientation="vertical">
     <ImageView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:src="@drawable/ic_launcher" />
 
     <TextView
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -40,7 +42,7 @@
 
         <TextView
             style="@style/MenuItemSmall"
-
+android:id="@+id/app_version"
             android:text="@string/this_version" />
     </LinearLayout>
 

@@ -108,7 +108,7 @@ public class MainActivity extends BaseActivity implements ObservableScrollViewCa
 
 //        setDummyData(listView);
         mTitleView = (TextView) findViewById(R.id.title);
-        mTitleView.setText(getTitle());
+        mTitleView.setText(R.string.app_name_image);
         setTitle(null);
         mFab = findViewById(R.id.fab);
         mFab.setOnClickListener(new View.OnClickListener(){
@@ -316,7 +316,7 @@ public class MainActivity extends BaseActivity implements ObservableScrollViewCa
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
 		tintManager.setStatusBarTintResource(R.color.primary);
-//        tintManager.setStatusBarTintDrawable(getResources().getDrawable(R.drawable.example));
+//        tintManager.setStatusBarTintDrawable(getResources().getDrawable(R.drawable.homeimage));
     }
 
     /**
@@ -328,7 +328,7 @@ public class MainActivity extends BaseActivity implements ObservableScrollViewCa
                 mExitTime = System.currentTimeMillis();
 
                 //ad(Config.WHEN_CLICK_BACK);
-                Toast.makeText(this, "twice", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.twicequit), Toast.LENGTH_SHORT).show();
 
             } else {
                 finish();

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/flexible_space_image_height"
         android:scaleType="centerCrop"
-        android:src="@drawable/example" />
+        android:src="@drawable/homeimage" />
 
     <View
         android:id="@+id/overlay"
@@ -103,10 +103,12 @@
 
 
     <com.melnykov.fab.FloatingActionButton
+        android:src
+            ="@drawable/ic_help_white_18dp"
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="center"
+        android:scaleType="fitCenter"
         app:fab_colorNormal="@color/accentLight"
         app:fab_colorPressed="@color/accent" />
 </FrameLayout>
