@@ -1,3 +1,4 @@
+![](https://github.com/wang4yu6peng13/SeeWifiPwd/blob/master/app/src/main/res/drawable-xxhdpi/ic_launcher.png)
 # SeeWifiPwd
 查看Android设备连接过的Wifi密码（需要root）
 ##应用介绍：
