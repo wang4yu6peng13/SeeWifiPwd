@@ -15,10 +15,10 @@
 -->
 <resources>
 
-    <color name="primary">#5677fc</color>
-    <color name="primaryDark">#2a36b1</color>
-    <color name="accent">#9c27b1</color>
-    <color name="accentLight">#aa00ff</color>
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
     <color name="linecolor">#ffd6d9df</color>
     <color name="viewdark">#ffd6d9df</color>
 </resources>

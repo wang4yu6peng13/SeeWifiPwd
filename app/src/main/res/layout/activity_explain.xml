@@ -5,16 +5,9 @@
     android:clipToPadding="false"
     android:fitsSystemWindows="true"
     tools:context="com.wyp.seewifipwd.ExplainActivity">
-        <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
 <TextView
-    android:layout_margin="@dimen/activity_horizontal_margin"
-    android:textSize="20sp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    style="@style/MenuItemSmall"
     android:text="@string/app_explain_text"/>
 
-    </ScrollView>
+
 </RelativeLayout>
