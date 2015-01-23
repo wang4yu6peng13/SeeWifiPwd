@@ -45,7 +45,7 @@ public class ExplainActivity extends ActionBarActivity {
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
         tintManager.setStatusBarTintResource(R.color.primary);
-//        tintManager.setStatusBarTintDrawable(getResources().getDrawable(R.drawable.example));
+//        tintManager.setStatusBarTintDrawable(getResources().getDrawable(R.drawable.homeimage));
     }
 
 }
