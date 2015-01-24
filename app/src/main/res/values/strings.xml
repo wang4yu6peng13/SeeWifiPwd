@@ -13,7 +13,7 @@
     <string name="app_explain">软件说明</string>
     <string name="open_source">开源项目</string>
     <string name="contribute">捐赠开发者</string>
-    <string name="contribute_text">本软件完全免费，为了鼓励开发者，您可以通过支付宝进行捐赠。\n帐号 wang4yu6peng13@qq.com 已经复制，感谢您的支持。\n注意：如果手机中的支付宝被冻结，软件可能会崩溃，请您手动解冻支付宝。</string>
+    <string name="contribute_text">本软件完全免费，为了鼓励开发者，您可以通过支付宝进行捐赠。\n帐号 wang4yu6peng13@qq.com 已经复制，感谢您的支持。</string>
     <string name="cancel">取消</string>
     <string name="open_alipay">打开支付宝</string>
     <string name="weibo">微博 @鹏总V5</string>

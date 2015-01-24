@@ -133,17 +133,21 @@ public class AboutActivity extends ActionBarActivity implements View.OnClickList
                 startActivity(intent_weibo);
                 break;
             case R.id.email:
+                try {
                 Intent intent_email = new Intent(Intent.ACTION_SENDTO);
                 intent_email.setData(Uri.parse("mailto:" + getString(R.string.send_email_site)));
                 intent_email.putExtra(Intent.EXTRA_SUBJECT, "Wifi密码查看反馈");
                 intent_email.putExtra(Intent.EXTRA_TEXT, "请填写邮件内容");
                 startActivity(intent_email);
+                } catch (Exception e) {
+                    Toast.makeText(this,"No found email app",Toast.LENGTH_SHORT).show();
+                }
                 break;
         }
     }
 
     //通过包名检测系统中是否安装某个应用程序
-    public boolean checkApkExist(Context context, String packageName) {
+/*    public boolean checkApkExist(Context context, String packageName) {
         if (packageName == null || "".equals(packageName)) {
             return false;
         }
@@ -155,14 +159,23 @@ public class AboutActivity extends ActionBarActivity implements View.OnClickList
         }
 
     }
-
+*/
     private void openAlipay() {
-        if (checkApkExist(this, "com.eg.android.AlipayGphone")) {
+/*        if (checkApkExist(this, "com.eg.android.AlipayGphone")) {
+
             Intent intent_alipay = getPackageManager()
                     .getLaunchIntentForPackage("com.eg.android.AlipayGphone");
             startActivity(intent_alipay);
+
         } else {
 
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.eg.android.AlipayGphone")));
+        }*/
+        try{
+            Intent intent_alipay = getPackageManager()
+                    .getLaunchIntentForPackage("com.eg.android.AlipayGphone");
+            startActivity(intent_alipay);
+        } catch (Exception e) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.eg.android.AlipayGphone")));
         }
     }
