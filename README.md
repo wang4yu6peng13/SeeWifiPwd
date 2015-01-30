@@ -27,6 +27,8 @@ drakeet 的对话框开源项目，同时本应用也完全开源，以上地址
 ![](https://github.com/wang4yu6peng13/SeeWifiPwd/blob/master/pictures/screenshot01.jpg) 
 ![](https://github.com/wang4yu6peng13/SeeWifiPwd/blob/master/pictures/screenshot02.jpg) 
 ![](https://github.com/wang4yu6peng13/SeeWifiPwd/blob/master/pictures/screenshot03.jpg) 
+##已上线至豌豆荚
+http://www.wandoujia.com/apps/com.wyp.seewifipwd
 ##开源项目
 https://github.com/cfm1120/seepwd<br>
 https://github.com/ksoichiro/Android-ObservableScrollView<br>
