@@ -33,7 +33,7 @@ public class MainActivity extends BaseActivity implements ObservableScrollViewCa
 
     private static final float MAX_TEXT_SCALE_DELTA = 0.3f;
     private static final boolean TOOLBAR_IS_STICKY = false;
-
+    private SystemBarTintManager tintManager;//=new SystemBarTintManager(this);
     private View mToolbar;
     private View mImageView;
     private View mOverlayView;
@@ -313,9 +313,10 @@ public class MainActivity extends BaseActivity implements ObservableScrollViewCa
             setTranslucentStatus(true);
         }
 
-        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+         tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
-		tintManager.setStatusBarTintResource(R.color.primary);
+        tintManager.setTintAlpha(0);
+//		tintManager.setStatusBarTintResource(R.color.primary);
 //        tintManager.setStatusBarTintDrawable(getResources().getDrawable(R.drawable.homeimage));
     }
 

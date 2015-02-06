@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SeeWifiPwd</string>
+    <string name="app_name">WiFi密码查看</string>
     <string name="app_name_image">释迦塔</string>
     <string name="noroot">您的设备没有root，无法查看密码</string>
     <string name="mustroot">设备必须root才能查看密码</string>
