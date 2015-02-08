@@ -18,11 +18,12 @@ import java.util.regex.Pattern;
 public class Parser {
 
   //static Pattern NETWORK = Pattern.compile("network\\=\\{\\s+ssid\\=(.+?)(\\s+psk\\=\"(.+?)\")?");
-    static Pattern NETWORK = Pattern.compile("network\\=\\{\\s+ssid\\=\"(.+?)\"(\\s+psk\\=\"(.+?)\")?");
+  //  static Pattern NETWORK = Pattern.compile("network\\=\\{\\s+ssid\\=\"(.+?)\"(\\s+psk\\=\"(.+?)\")?");
+  static Pattern NETWORK = Pattern.compile("network\\=\\{\\s+ssid\\=\"(.+?)\"(\\s+scan_ssid\\=1)?(\\s+psk\\=\"(.+?)\")?");
 
     public final static String wpaString="config_methods=physical_display virtual_push_button keypad" +
             "network={    ssid=\"CMCC-EDU\" key_mgmt=NONE}" +
-            "network={   ssid=homechen psk=\"bl45666gogo\"  key_mgmt=WPA-PSK    priority=3  disabled=1}" +
+            "network={   ssid=\"homechen\"  scan_ssid=1    psk=\"bl45666gogo\"  key_mgmt=WPA-PSK    priority=3  disabled=1}" +
             "network={   ssid=\"zhutou1\"   psk=\"5461\" key_mgmt=WPA-PSK}" +
             "network={   ssid=\"zhongmai\" psk=\"545611\"    proto=WPA   key_mgmt=WPA-PSK    group=CCMP TKIP    priority=4}";
 
@@ -55,7 +56,7 @@ public class Parser {
             }
             Network network = new Network();
             network.setSsid(matcher.group(1));
-            network.setPsk(matcher.group(3));
+            network.setPsk(matcher.group(4));
 
             netList.add(network);
         }
