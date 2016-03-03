@@ -86,8 +86,8 @@ public class NetworkAdapter extends BaseAdapter{
         }
 
         //如果当前位置为正在连接的
-        /*
-        if(dataList.get(position).getSsid().equals(connectingSsid))
+
+        if(position==0 &&dataList.get(position).getSsid().equals(connectingSsid))
         {
             //            holder.shareBtn.setTextColor(Color.WHITE);
             //            holder.shareBtn.setBackgroundResource(R.drawable.button_connecting);
@@ -98,7 +98,7 @@ public class NetworkAdapter extends BaseAdapter{
 //             holder.shareBtn.setTextColor(BLUE);
             //            holder.shareBtn.setBackgroundResource(R.drawable.button_share);
             convertView.setBackgroundColor(Color.WHITE);
-        }*/
+        }
 
  /*
          holder.shareBtn.setOnClickListener(new OnClickListener() {
