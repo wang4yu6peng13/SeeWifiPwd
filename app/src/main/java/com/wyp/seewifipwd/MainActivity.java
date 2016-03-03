@@ -189,11 +189,26 @@ public class MainActivity extends BaseActivity implements ObservableScrollViewCa
                 setDummyData(listView);
             }
             dataList=Parser.getNetworks(out);
+            String cur_wifissid = Parser.getCurrentWifi(this.getApplicationContext());
+            if (cur_wifissid!=null){
+                String password = null;
+                for (Network network : dataList) {
+                    if (network.getSsid().equals(cur_wifissid)){
+                        password = network.getPsk();
+                    }
+                }
+                Network network= new Network();
+                network.setSsid(cur_wifissid);
+                network.setPsk(password);
+                dataList.add(network);
+//                System.out.println("当前连接wifi为:"+wifissid);
+            }
             for (Network network : dataList) {
                 if(network.getPsk()==null)
                     noPwdList.add(network);//把无密码的网络保存起来
             }
             networkAdapter=new NetworkAdapter(this,dataList);
+            networkAdapter.setConnectingSsid(cur_wifissid);
             listView.setAdapter(networkAdapter);
 
         }

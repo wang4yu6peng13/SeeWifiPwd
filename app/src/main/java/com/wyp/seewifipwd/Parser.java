@@ -3,6 +3,10 @@ package com.wyp.seewifipwd;
 /**
  * Created by WYP on 2015/1/21.
  */
+import android.content.Context;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
+
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -60,6 +64,21 @@ public class Parser {
 
             netList.add(network);
         }
+    }
+
+
+    public static String getCurrentWifi(Context context) {
+        WifiManager mWifi = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+        WifiInfo wifiInfo = mWifi.getConnectionInfo();
+
+        String ssid = wifiInfo.getSSID();
+        int s_index = ssid.indexOf('"');
+        int e_index = ssid.lastIndexOf('"');
+        int start_index = s_index ==-1?0 : 1;
+        int end_index = e_index ==-1?ssid.length() : e_index;
+//        System.out.println(s_index+","+e_index+","+start_index+","+end_index);
+        ssid = ssid.substring(start_index,end_index);
+        return ssid;
     }
 
 
